@@ -7,12 +7,12 @@ module.exports = (app) => {
     // Retrieve all Task
     app.get('/task', Task.findAll);
 
-    // // Retrieve a single Task with TaskId
-    // app.get('/Task/:TaskId', Task.findOne);
+    // Retrieve a single Task with TaskId
+    app.get('/Task/:_id', Task.findOne);
 
-    // // Update a Task with TaskId
-    // app.put('/Task/:TaskId', Task.update);
+    //  Update a Task with TaskId
+    app.put('/Task/:_id', Task.update);
 
-    // // Delete a Task with TaskId
-    // app.delete('/Task/:noteId', Task.delete);
+    // Delete a Task with TaskId
+    app.delete('/Task/:_id', Task.delete);
 }
